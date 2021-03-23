@@ -10,7 +10,7 @@ brew outdated git || brew upgrade git
 
 dir="/tmp/$RANDOM"
 mkdir "$dir"
-git clone https://github.com/reishou/ansible_macos_setup.git $dir
+git clone -b minhden https://github.com/reishou/ansible_macos_setup.git $dir
 
 if [ ! "$(ls -A "$dir")" ]; then
 	# @TODO: check ansible file exist

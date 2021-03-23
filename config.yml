@@ -1,70 +1,31 @@
 ---
 brew_pkgs:
-  # web server
-  - nginx
-  # backend language
-  - go
   - python
   - php
   - node
   # database
   - mysql
-  - postgresql
   # util
   - mas
-  - youtube-dl
-  - neofetch
   - curl
   - composer
   - yarn
-  - dnsmasq
-  - direnv
-  # terminal family
-  - fish
-  - bat
-  - exa
-  - fd
-  - fzf
-  - htop
-  - ripgrep
-  - grc
-  - tmux
-  - autojump
-  - git-flow
 
 brew_taps:
   - homebrew/cask-fonts
 
 brew_apps:
-  - 1password
   - alfred
-  - datagrip
-  - docker
-  - evernote
-  - font-fira-code-nerd-font
-  - font-inconsolata
   - google-chrome
-  - goland
-  - istat-menus
   - iterm2
   - openkey
-  - phpstorm
-  - pomodone
   - postman
-  - pycharm
-  - rectangle
   - rocket-chat
   - skype
-  - slack
-  - telegram-desktop
-  - transmission
   - visual-studio-code
-  - vlc
   - webstorm
 
 mas_apps: [
-  { id: 585829637, name: "Todoist" },
-  { id: 540348655, name: "Monosnap" },
 ]
 
 dotfiles:
