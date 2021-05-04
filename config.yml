@@ -1,23 +1,23 @@
 ---
 brew_pkgs:
   # web server
-  - nginx
+#  - nginx
   # backend language
   - go
-  - python
-  - php
-  - node
+#  - python
+#  - php
+#  - node
   # database
-  - mysql
-  - postgresql
+#  - mysql
+#  - postgresql
   # util
   - mas
   - youtube-dl
   - neofetch
   - curl
-  - composer
-  - yarn
-  - dnsmasq
+#  - composer
+#  - yarn
+#  - dnsmasq
   - direnv
   # terminal family
   - fish
@@ -29,8 +29,8 @@ brew_pkgs:
   - ripgrep
   - grc
   - tmux
-  - autojump
-  - git-flow
+#  - autojump
+#  - git-flow
 
 brew_taps:
   - homebrew/cask-fonts
@@ -38,11 +38,12 @@ brew_taps:
 brew_apps:
   - 1password
   - alfred
+  - clion
   - datagrip
   - docker
   - evernote
-  - font-fira-code-nerd-font
-  - font-inconsolata
+#  - font-fira-code-nerd-font
+  - font-inconsolata-nerd-font
   - google-chrome
   - goland
   - istat-menus
@@ -61,6 +62,7 @@ brew_apps:
   - visual-studio-code
   - vlc
   - webstorm
+  - zoomus
 
 mas_apps: [
   { id: 585829637, name: "Todoist" },
@@ -152,7 +154,7 @@ post_install:
     # Not work
     { domain: "com.apple.LaunchServices", key: "LSQuarantine", type: "bool", value: "false" },
     { domain: "com.apple.loginwindow", key: "DesktopPicture", type: "string",
-      value: "${HOME}/Documents/Pictures/anime-kite-in-sky-dusk_3840x2160_xtrafondos.jpg", global: "true" },
+      value: "./files/background.jpg", global: "true" },
     #    { domain: "com.apple.universalaccess", key: "closeViewScrollWheelToggle", type: "bool", value: "true" },
     #    { domain: "com.apple.universalaccess", key: "mouseDriverCursorSize", type: "float", value: "1.25" },
   ]
@@ -259,5 +261,6 @@ post_install:
     "
   os_timezone: "Asia/Ho_Chi_Minh"
   computer_name: "sakura"
-  background_image: "${HOME}/Documents/Pictures/anime-kite-in-sky-dusk_3840x2160_xtrafondos.jpg"
-  screen_installer: "${HOME}/Documents/LotsaWater.saver"
+  background_image_src: "./files/background.jpg"
+  background_image_dest: "~/Pictures/background.jpg"
+  screen_installer: "./files/LotsaWater.saver"

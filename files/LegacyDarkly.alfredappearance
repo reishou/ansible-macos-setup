@@ -1,0 +1,61 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 8,
+      "subtext" : {
+        "size" : 11,
+        "colorSelected" : "#54BE5AFF",
+        "font" : "Lucida Grande",
+        "color" : "#69878FFF"
+      },
+      "shortcut" : {
+        "size" : 24,
+        "colorSelected" : "#E1404AFF",
+        "font" : "Lucida Grande",
+        "color" : "#8B86CEFF"
+      },
+      "backgroundSelected" : "#7B84A550",
+      "text" : {
+        "size" : 20,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "FuraCode Nerd Font",
+        "color" : "#D08E5DFF"
+      },
+      "iconPaddingHorizontal" : 5,
+      "paddingVertical" : 11,
+      "iconSize" : 40
+    },
+    "search" : {
+      "paddingVertical" : 2,
+      "background" : "#00000000",
+      "spacing" : 10,
+      "text" : {
+        "size" : 36,
+        "colorSelected" : "#000000FF",
+        "font" : "FuraCode Nerd Font",
+        "color" : "#BA99F3FF"
+      },
+      "backgroundSelected" : "#B5D5FFFF"
+    },
+    "window" : {
+      "color" : "#282B35B2",
+      "paddingHorizontal" : 10,
+      "width" : 680,
+      "borderPadding" : 10,
+      "borderColor" : "#E1404900",
+      "blur" : 0,
+      "roundness" : 3,
+      "paddingVertical" : 10
+    },
+    "credit" : "Phuong",
+    "separator" : {
+      "color" : "#282B35FF",
+      "thickness" : 0
+    },
+    "scrollbar" : {
+      "color" : "#918F75FF",
+      "thickness" : 2
+    },
+    "name" : "Legacy Darkly"
+  }
+}
