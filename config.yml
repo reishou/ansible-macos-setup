@@ -4,12 +4,12 @@ brew_pkgs:
 #  - nginx
   # backend language
   - go
-#  - python
+  - python
 #  - php
 #  - node
   # database
 #  - mysql
-#  - postgresql
+  - postgresql
   # util
   - mas
   - youtube-dl
@@ -38,12 +38,11 @@ brew_taps:
 brew_apps:
   - 1password
   - alfred
-  - clion
+#  - clion
   - datagrip
   - docker
   - evernote
-#  - font-fira-code-nerd-font
-  - font-inconsolata-nerd-font
+  - font-fira-code-nerd-font
   - google-chrome
   - goland
   - istat-menus
@@ -54,7 +53,7 @@ brew_apps:
   - postman
   - pycharm
   - rectangle
-  - rocket-chat
+#  - rocket-chat
   - skype
   - slack
   - telegram-desktop
@@ -62,7 +61,7 @@ brew_apps:
   - visual-studio-code
   - vlc
   - webstorm
-  - zoomus
+#  - zoomus
 
 mas_apps: [
   { id: 585829637, name: "Todoist" },
