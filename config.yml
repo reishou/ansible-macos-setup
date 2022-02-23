@@ -9,7 +9,7 @@ brew_pkgs:
 #  - node
   # database
 #  - mysql
-  - postgresql
+#  - postgresql
   # util
   - mas
   - youtube-dl
@@ -29,8 +29,7 @@ brew_pkgs:
   - ripgrep
   - grc
   - tmux
-#  - autojump
-#  - git-flow
+  - autojump
 
 brew_taps:
   - homebrew/cask-fonts
@@ -38,13 +37,14 @@ brew_taps:
 brew_apps:
   - 1password
   - alfred
-#  - clion
+  - clion
   - datagrip
+  - discord
   - docker
   - evernote
   - font-fira-code-nerd-font
-  - google-chrome
   - goland
+  - google-chrome
   - istat-menus
   - iterm2
   - openkey
@@ -53,15 +53,15 @@ brew_apps:
   - postman
   - pycharm
   - rectangle
-#  - rocket-chat
   - skype
   - slack
   - telegram-desktop
   - transmission
+  - vagrant
+  - virtualbox
   - visual-studio-code
   - vlc
   - webstorm
-#  - zoomus
 
 mas_apps: [
   { id: 585829637, name: "Todoist" },
@@ -261,5 +261,5 @@ post_install:
   os_timezone: "Asia/Ho_Chi_Minh"
   computer_name: "sakura"
   background_image_src: "./files/background.jpg"
-  background_image_dest: "~/Pictures/background.jpg"
+  background_image_dest: "~/Documents/Pictures/background.jpg"
   screen_installer: "./files/LotsaWater.saver"
