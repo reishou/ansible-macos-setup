@@ -37,6 +37,8 @@ brew_taps:
 brew_apps:
   - 1password
   - alfred
+  - alt-tab
+  - cleanshot
   - clion
   - datagrip
   - discord
@@ -62,10 +64,10 @@ brew_apps:
   - visual-studio-code
   - vlc
   - webstorm
+  - zalo
 
 mas_apps: [
   { id: 585829637, name: "Todoist" },
-  { id: 540348655, name: "Monosnap" },
 ]
 
 dotfiles:

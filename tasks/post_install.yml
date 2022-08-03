@@ -67,7 +67,7 @@
     # https://stackoverflow.com/questions/33533304/change-scaling-for-all-desktop-backgrounds-on-mac-via-a-script/42194904 changing is enabled)
 
 - name: Make code folder
-  shell: "mkdir ~/code ~/code/github.com ~/code/gitlab.com"
+  shell: "mkdir ~/code ~/code/github.com ~/code/gitlab.com ~/code/bitbucket.org"
   ignore_errors: yes
 
 - name: Killall Dock
