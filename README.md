@@ -1,9 +1,8 @@
 # ansible-macos-setup
 
-```shell
-xcode-select --install
+- Enable Desktop & Documents Folders sync iCloud
+```text
+System Settings > Apple ID > iCloud Drive > Options
+> Check Desktop & Documents Folders
 ```
-
-```shell
-cd /tmp && sudo curl -s https://raw.githubusercontent.com/reishou/ansible-macos-setup/master/start.sh | /bin/bash
-```
+- Login App Store

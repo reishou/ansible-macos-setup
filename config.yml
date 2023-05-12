@@ -1,35 +1,26 @@
 ---
-brew_pkgs:
-  # web server
-#  - nginx
-  # backend language
-  - go
-  - python
-#  - php
-#  - node
-  # database
-#  - mysql
-#  - postgresql
-  # util
-  - mas
-  - youtube-dl
-  - neofetch
+brew_packages:
+  - autojump # jump any recent folder
+  - awscli # manage amazon web service on cli
+  - bat # replace cat
   - curl
-#  - composer
-#  - yarn
-#  - dnsmasq
-  - direnv
-  # terminal family
-  - fish
-  - bat
-  - exa
-  - fd
-  - fzf
-  - htop
-  - ripgrep
-  - grc
-  - tmux
-  - autojump
+  - direnv # env var for shell
+  - exa # replace ls
+  - fd # replace grep
+  - fish # replace zsh
+  - fzf # replace grep
+  - git
+  - go
+  - htop # interactive process viewer
+  - mas # mac app store cli
+  - neofetch # system information
+  - node
+  - python
+  - thefuck # corrects previous console command
+  - tmux # multiple terminal session
+  - tree # show directory tree
+  - youtube-dl # download youtube media
+  - yarn
 
 brew_taps:
   - homebrew/cask-fonts
@@ -38,20 +29,21 @@ brew_apps:
   - 1password
   - alfred
   - alt-tab
-  - cleanshot
   - clion
+  - cloudflare-warp
   - datagrip
   - discord
   - docker
   - evernote
-  - font-fira-code-nerd-font
+  - font-inconsolata
   - goland
   - google-chrome
   - istat-menus
   - iterm2
+  - jetbrains-toolbox
+  - messenger
   - openkey
   - phpstorm
-  - pomodone
   - postman
   - pycharm
   - rectangle
@@ -67,12 +59,8 @@ brew_apps:
   - zalo
 
 mas_apps: [
-  { id: 585829637, name: "Todoist" },
+  { id: 540348655, name: "Monosnap" },
 ]
-
-dotfiles:
-  dotfiles_repo: "https://github.com/reishou/dotfiles.fish.git"
-  dotfiles_dest: "${HOME}/.dotfiles"
 
 post_install:
   defaults: [
@@ -139,6 +127,8 @@ post_install:
     { domain: "com.apple.DiskUtility", key: "SidebarShowAllDevices", type: "bool", value: "true" },
     # Other
     { domain: "com.apple.dashboard", key: "mcx-disabled", type: "bool", value: "true" },
+    { domain: "com.apple.desktopservices", key: "DSDontWriteNetworkStores", type: "bool", value: "true" },
+    { domain: "com.apple.Chrome", key: "AppleEnableSwipeNavigateWithScrolls", type: "bool", value: "false" },
     # Shortcut has type dict, ansible osx_defaults not support
     #    { domain: "com.apple.symbolichotkeys", key: "AppleSymbolicHotKeys", type: "dict", value:
     #      {
@@ -152,12 +142,6 @@ post_install:
     #        64: { enabled: 0 }, # Show Spotlight search
     #      }
     #    },
-    # Not work
-    { domain: "com.apple.LaunchServices", key: "LSQuarantine", type: "bool", value: "false" },
-    { domain: "com.apple.loginwindow", key: "DesktopPicture", type: "string",
-      value: "./files/background.jpg", global: "true" },
-    #    { domain: "com.apple.universalaccess", key: "closeViewScrollWheelToggle", type: "bool", value: "true" },
-    #    { domain: "com.apple.universalaccess", key: "mouseDriverCursorSize", type: "float", value: "1.25" },
   ]
   hot_keys: [
     { key: "28", dict: "
@@ -261,7 +245,4 @@ post_install:
       </dict>
     "
   os_timezone: "Asia/Ho_Chi_Minh"
-  computer_name: "sakura"
-  background_image_src: "./files/background.jpg"
-  background_image_dest: "~/Documents/Pictures/background.jpg"
-  screen_installer: "./files/LotsaWater.saver"
+  computer_name: "hackintosh"
